@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+   
+    <style>
+        /* For smooth transitions */
+        .transition-transform {
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased leading-relaxed min-h-screen">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-20">
+
+        <!-- Navbar -->
+        <nav class="flex items-center justify-between p-4">
+            <!-- Logo -->
+            <div class="flex items-center space-x-4">
+                <img src="https://www.fertility-academy.co.uk/wp-content/uploads/2023/12/fertility-and-gynaecology-academy-logo.png#56297" alt="Logo" class="h-40 w-40"> <!-- Replace with your logo path -->
+            </div>
+
+            <!-- Icons and Hamburger Menu (Visible on Small Screens) -->
+            <div class="flex items-center space-x-4 sm:hidden">
+                <i class="fa-solid fa-magnifying-glass text-blue-900"></i>
+                <i class="fa-solid fa-envelope text-blue-900"></i>
+                <i class="fa-solid fa-phone text-blue-900"></i>
+                <button id="menu-btn" class="text-blue-900 focus:outline-none">
+                    <i id="menu-icon" class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+            <!-- Contact Info and Menu Links (Visible on Medium and Larger Screens) -->
+            <div class="hidden sm:flex sm:flex-col sm:items-end sm:space-y-2">
+                <div class="flex items-center space-x-4">
+                    <span class="text-md font-semibold text-yellow-800">info@fertility-academy.co.uk</span>
+                    <span class="text-md font-semibold text-yellow-800">|</span>
+                    <span class="text-md font-semibold text-yellow-800">020 7224 1880</span>
+                    <div class="flex items-center space-x-9">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <a href="#" class="bg-red-600 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">Book online</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <a href="#" class="text-md text-gray-700 hover:text-purple-700">About</a>
+                    <a href="#" class="text-md text-gray-700 hover:text-purple-700">Patient journey</a>
+                    <a href="#" class="text-md text-gray-700 hover:text-purple-700">Fertility tests</a>
+                    <a href="#" class="text-md text-gray-700 hover:text-purple-700">Treatments</a>
+                    <a href="#" class="text-md text-gray-700 hover:text-purple-700">Success rates</a>
+                    <a href="#" class="text-md text-gray-700 hover:text-purple-700">Knowledge hub</a>
+                    <a href="#" class="text-md text-gray-700 hover:text-purple-700">Pricing</a>
+                    <a href="#" class="text-md text-gray-700 hover:text-purple-700">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Sidebar for Mobile -->
+        <div id="sidebar" class="fixed top-0 left-0 w-64 h-full bg-white text-white p-4 transform -translate-x-full transition-transform sm:hidden">
+            <ul class=" pt-20 text-black space-y-4">
+                <li><a href="#" class="text-lg">About</a></li>
+                <li><a href="#" class="text-lg">Patient journey</a></li>
+                <li><a href="#" class="text-lg">Fertility tests</a></li>
+                <li><a href="#" class="text-lg">Treatments</a></li>
+                <li><a href="#" class="text-lg">Success rates</a></li>
+                <li><a href="#" class="text-lg">Knowledge hub</a></li>
+                <li><a href="#" class="text-lg">Pricing</a></li>
+                <li><a href="#" class="text-lg">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="bg-cover p-6 flex flex-col h-[60vh] md:flex-row items-center justify-between" style="background-image: url('fertility-gynaecology-academy-fertility-clinic-in-london-1536x976.jpg'); background-size: contain; background-repeat: no-repeat; background-position: center right;">
+            <div class="md:w-1/2">
+                <h1 class="text-6xl md:text-7xl font-bold text-blue-900 leading-tight">
+                    A leading fertility clinic in London for <span class="text-blue-900">IVF</span>
+                </h1>
+                <p class="mt-4 text-lg text-gray-700">
+                    Chosen by patients for our compassion, dedication, personalised care, and effective fertility treatment.
+                </p>
+                <p class="mt-2 text-base text-gray-500">
+                    We offer advanced treatments for infertility, including fertility tests, IVF, ICSI, egg freezing, and reproductive immunology.
+                </p>
+                <button class="mt-6 bg-red-600 text-white text-lg font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-pink-700">
+                    Book an appointment
+                </button>
+            </div>
+        </div>
+        <div class="relative bg-blue-100 p-8 rounded-lg h-auto md:h-80 flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8"> <div class="text-center md:text-left"> <h1 class="text-3xl md:text-6xl font-bold text-blue-900">Begin your</h1> <h1 class="text-3xl md:text-6xl font-bold text-blue-900">Fertility Journey</h1> </div> <div class="space-y-4 md:space-y-0 md:space-x-4"> <button class="bg-red-500 text-white py-2 px-4 rounded-md w-full md:w-auto">Single individual</button> <button class="bg-red-500 text-white py-2 px-4 rounded-md w-full md:w-auto">Heterosexual couple</button> <button class="bg-red-500 text-white py-2 px-4 rounded-md w-full md:w-auto">Same sex couple</button> </div> </div>
+
+  <!-- Div with overlapping image and text -->
+<div class=" bg-yellow-100 relative flex items-center  p-10">
+  <!-- Image container with negative margin -->
+  <div class="relative -mt-20 bg-[#f5f0e1]">
+    <img src="https://www.fertility-academy.co.uk/wp-content/uploads/2024/05/fartility-1024x651.jpg" alt="Family with baby" class="rounded-lg w-[500px] max-w-full shadow-lg">
+  </div>
+
+  <!-- Text Content -->
+  <div class="ml-8 relative">
+    <!-- Adjust the h1 positioning -->
+    <h1 class="text-6xl font-bold mb-4 text-blue-900 relative z-15 -left-10">Pioneers in Immune Treatment</h1>
+    <p class="text-lg mb-4">We believe we can offer patients with a history of recurrent IVF failure or multiple miscarriages a better chance of success by studying the role of their immune system in pregnancy. We provide immune therapy tailored to your individual situation.</p>
+    <button class="px-4 py-2 bg-red-500 text-white rounded-md">Start immune treatment</button>
+  </div>
+</div>
+<div class="bg relative flex items-center p-10">
+  <!-- Text Content -->
+  <div class="mr-8 relative">
+    <!-- Adjust the h1 positioning -->
+    <h1 class="text-6xl font-bold mb-4 text-blue-900">Preserve your fertility</h1>
+    <p class="text-lg mb-4">Not ready to start a family yet? You’re not alone. A growing number of individuals and couples are choosing to freeze their eggs and sperm to delay starting a family. 
+
+Whether you’re undergoing medical treatment, haven’t found the right partner yet, or just want to preserve your fertility, speak to us today about egg freezing and sperm freezing to find out how we can help you.</p>
+    <button class="px-4 py-2 bg-red-500 text-white rounded-md">Egg & Sperm Frezzing
+    </button>
+  </div>
+
+  <!-- Image container with negative margin -->
+  <div class="relative bg-[#f5f0e1]">
+    <img src="https://www.fertility-academy.co.uk/wp-content/uploads/2024/05/egg-freezing-preserve-your-fertility-the-fertility-and-gynaecology-academy-1024x651.jpg" alt="Family with baby" class="rounded-lg w-[20px] max-w-full shadow-lg">
+  </div>
+</div>
+<div class="  bg-blue-100 relative flex items-center pt-40 pb-40 pl-2.5 pr-2.5">
+  <!-- Text Content -->
+  <div class="bg-blue-100 mr-8 relative">
+    <h1 class="text-6xl font-bold mb-4 text-blue-900">What Our Patients say</h1>
+    <p class="text-lg mb-4">Thank you for making our dreams come true, not just once but twice! Your help and guidance was amazing throughout.</p>
+    <button class="px-4 py-2 bg-red-500 text-white rounded-md">Start immune treatment</button>
+  </div>
+
+  <!-- Image container with adjusted size -->
+  <div class="relative bg-[#f5f0e1]">
+    <img src="https://www.fertility-academy.co.uk/wp-content/uploads/2024/01/what-our-patients-say-v2.png" alt="Family with baby" class="rounded-lg w-[1000px] max-w-full shadow-lg">
+  </div>
+</div>
+<div class="max-w-4xl mx-auto py-12 px-4"> <h2 class="text-4xl font-bold text-blue-900 mb-8">Why choose us?</h2> <div class="space-y-8"> <div class="flex items-start"> <div class="flex-shrink-0"> <!-- Insert appropriate SVG or image for the icon --> <svg class="h-10 w-10 text-blue-900" fill="currentColor" viewBox="0 0 20 20"><!-- SVG content here --></svg> </div> <div class="ml-4"> <h3 class="text-xl font-semibold text-blue-900">Personal care</h3> <p class="mt-2 text-gray-600">Our personal care is really what sets us apart – we endeavour to provide continuity of care with the same consultant throughout the course of your treatment and go the extra mile for each of our patients.</p> </div> </div> <div class="flex items-start"> <div class="flex-shrink-0"> <!-- Insert appropriate SVG or image for the icon --> <svg class="h-10 w-10 text-blue-900" fill="currentColor" viewBox="0 0 20 20"><!-- SVG content here --></svg> </div> <div class="ml-4"> <h3 class="text-xl font-semibold text-blue-900">Unrivalled expertise</h3> <p class="mt-2 text-gray-600">We’re an IVF clinic led by Dr Amin Gorgy, one of the most respected fertility consultants in the UK.</p> </div> </div> <div class="flex items-start"> <div class="flex-shrink-0"> <!-- Insert appropriate SVG or image for the icon --> <svg class="h-10 w-10 text-blue-900" fill="currentColor" viewBox="0 0 20 20"><!-- SVG content here --></svg> </div> <div class="ml-4"> <h3 class="text-xl font-semibold text-blue-900">We go above and beyond for our patients</h3> <p class="mt-2 text-gray-600">We pride ourselves on providing an exceptional level of care and service to ensure you feel 100% supported throughout your journey with us.</p> </div> </div> <div class="flex items-start"> <div class="flex-shrink-0"> <!-- Insert appropriate SVG or image for the icon --> <svg class="h-10 w-10 text-blue-900" fill="currentColor" viewBox="0 0 20 20"><!-- SVG content here --></svg> </div> <div class="ml-4"> <h3 class="text-xl font-semibold text-blue-900">State of the art equipment</h3> <p class="mt-2 text-gray-600">We may be a small, boutique fertility clinic but you can expect the full range of fertility treatments using state of the art equipment.</p> <button class="mt-6 bg-red-600 text-white text-lg font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-pink-700">
+                    Read More
+                </button></div> </div> </div> 
+</div>
+<footer class="bg-gray-100 py-12"> <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4"> <!-- I am a... section --> <div> <h3 class="text-lg font-semibold text-gray-800 mb-4">I am a...</h3> <ul class="space-y-2"> <li><a href="#" class="text-gray-700 hover:text-gray-900">Single individual</a></li> <li><a href="#" class="text-gray-700 hover:text-gray-900">Heterosexual couple</a></li> <li><a href="#" class="text-gray-700 hover:text-gray-900">Same sex couple</a></li> </ul> </div> <!-- Get in touch section --> <div> <h3 class="text-lg font-semibold text-gray-800 mb-4">Get in touch</h3> <address class="not-italic text-gray-700"> <p>The Fertility & Gynaecology Academy</p> <p>57A Wimpole Street,</p> <p>London W1G 8YP</p> <p class="mt-4"><a href="tel:+442072241880" class="inline-flex items-center text-gray-700 hover:text-gray-900"> <svg class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M6.557 12.79l2.122-2.122a1 1 0 011.415 0l2.829 2.828a1 1 0 010 1.415l-2.12 2.121a12.043 12.043 0 01-4.246-4.246z"></path></svg> +44 (0)20 7224 1880 </a></p> <p class="mt-1"><a href="mailto:info@fertility-academy.co.uk" class="inline-flex items-center text-gray-700 hover:text-gray-900"> <svg class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M2 4a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V4zm2 0v.217l6 4.2 6-4.2V4H4zm0 1.152l5.867 4.115a1 1 0 001.266 0L16 5.152V16H4V5.152z"></path></svg> info@fertility-academy.co.uk </a></p> <p class="mt-4 font-semibold text-gray-800">Opening times</p> <p>Monday-Friday: 8:00-17:00</p> <p>Saturday: 9:00-13:00</p> </address> </div> <!-- The clinic section --> <div> <h3 class="text-lg font-semibold text-gray-800 mb-4">The clinic</h3> <ul class="space-y-2"> <li><a href="#" class="text-gray-700 hover:text-gray-900">About</a></li> <li><a href="#" class="text-gray-700 hover:text-gray-900">Events</a></li> <li><a href="#" class="text-gray-700 hover:text-gray-900">Careers</a></li> </ul> </div> <!-- CQC Section --> <div class="bg-white p-4 shadow-sm rounded-lg"> <h3 class="text-lg font-semibold text-gray-800 mb-4">CareQuality Commission</h3> <p class="text-gray-700">CQC regulates The Fertility Academy Limited to provide care at The Fertility & Gynaecology Academy. Our last check showed:</p> <div class="flex items-center mt-4"> <svg class="h-6 w-6 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.5-8.5L9 14l-2.5-2.5a.5.5 0 00-.707.707l3 3a.5.5 0 00.707 0l5-5a.5.5 0 00-.707-.707z"></path></svg> <p class="ml-2 text-gray-800">This service was meeting all CQC national standards</p> </div> <a href="#" class="mt-4 inline-block bg-green-600 text-white font-semibold py-2 px-4 rounded hover:bg-green-700">See the report on CQC's website</a> </div> </div> <!-- Footer Bottom --> <div class="max-w-6xl mx-auto mt-12 px-4 border-t border-gray-200 pt-4"> <div class="flex justify-between items-center"> <p class="text-gray-600 text-sm">&copy; 2024 The Fertility & Gynaecology Academy. All rights reserved.</p> <ul class="flex space-x-4 text-sm"> <li><a href="#" class="text-gray-600 hover:text-gray-800">Legal Info</a></li> <li><a href="#" class="text-gray-600 hover:text-gray-800">Patient T&Cs</a></li> <li><a href="#" class="text-gray-600 hover:text-gray-800">Website T&Cs</a></li> <li><a href="#" class="text-gray-600 hover:text-gray-800">Cookies & Privacy</a></li> </ul> </div> </div> </footer>
+
+</div>
+
+    
+    <script src="./index.js"></script>
+    
+
+</body>
+</html>
